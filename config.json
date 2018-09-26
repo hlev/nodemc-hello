@@ -1,0 +1,14 @@
+{
+  "development": {
+    "http": {
+      "port": 8080
+    },
+    "https": {
+      "port": 8443,
+      "tls": {
+        "key": "./tls/key.pem",
+        "cert": "./tls/cert.pem"
+      }
+    }
+  }
+}
