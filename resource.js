@@ -10,7 +10,9 @@ class Resource {
         this._handlers = new Map();
         this._handlers.set('options', (data, req, res) => {
             res.writeHead(200, {
-                Allow: this.options.join(', ').toUpperCase()
+                'Allow': this.options.join(', ').toUpperCase(),
+                'Content-Type': 'application/json',
+                'Content-Length': 0
             });
             res.end();
         });
